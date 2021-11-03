@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+# Programa de ingreso de datos
+# Se igresan nombres completos y se alamacenan en una lista
+
 # Bryan Ramírez Ampié B35581
 
 # Lista que almaceará los nombres corregidos
