@@ -71,49 +71,52 @@ class matriz:
 
 # Programa de prueba
 
-matriz_a = matriz(4, 4)
-matriz_b = matriz(4, 4)
-matriz_c = matriz(3, 4)
-print(
-      "Las entradas de la matriz a son:\n", (matriz_a),
-      "Las entradas de la matriz b son:\n", (matriz_b),
-      "Las entradas de la matriz c son:\n", (matriz_c)
-      )
+if __name__ == '__main__':
 
-# se agregan valores al azar a las entradas de las matrices del 0 al 9
+    matriz_a = matriz(4, 4)
+    matriz_b = matriz(4, 4)
+    matriz_c = matriz(3, 4)
+    print(
+        "Las entradas de la matriz a son:\n", (matriz_a),
+        "Las entradas de la matriz b son:\n", (matriz_b),
+        "Las entradas de la matriz c son:\n", (matriz_c)
+        )
 
-matriz_a = matriz_a.randm()
-matriz_b = matriz_b.randm()
-matriz_c = matriz_c.randm()
+    # se agregan valores al azar a las entradas de las matrices del 0 al 9
 
-print(
-      "Se han agregado valores aleatorios del 0 al 9 a las"
-      "entradas de las matrices "
-      "para la comprobación de las funciones\n",
-      "\nLas nuevas entradas de la matriz a son:\n", (matriz_a),
-      "Las nuevas entradas de la matriz b son:\n", (matriz_b),
-      "Las nuevas entradas de la matriz c son:\n", (matriz_c)
-      )
-# Comprobacion de los métodos set y get
+    matriz_a = matriz_a.randm()
+    matriz_b = matriz_b.randm()
+    matriz_c = matriz_c.randm()
 
-matriz_c = matriz_c.set(2, 1, 8)
+    print(
+        "Se han agregado valores aleatorios del 0 al 9 a las"
+        "entradas de las matrices "
+        "para la comprobación de las funciones\n",
+        "\nLas nuevas entradas de la matriz a son:\n", (matriz_a),
+        "Las nuevas entradas de la matriz b son:\n", (matriz_b),
+        "Las nuevas entradas de la matriz c son:\n", (matriz_c)
+        )
+    # Comprobacion de los métodos set y get
 
-print(" La nueva matriz c con la entrada (2,1) cambiada es:\n", matriz_c)
+    matriz_c = matriz_c.set(2, 1, 8)
 
-entrada21 = matriz_c.get(2, 1)
+    print(" La nueva matriz c con la entrada (2,1) cambiada es:\n", matriz_c)
 
-print("EL valor de la entrada(2, 1) de la matriz c es {}\n \n".format(entrada21))
+    entrada21 = matriz_c.get(2, 1)
 
-# Comprabaión de los método de suma, resta y error por diferencia de tamaño
+    print("EL valor de la entrada(2, 1) de"
+          "la matriz c es {}\n \n".format(entrada21))
 
-matriz_d = matriz_a + matriz_b
-print("La suma de la matriz a y b es:\n", matriz_d)
+    # Comprabaión de los método de suma, resta y error por diferencia de tamaño
 
-matriz_e = matriz_a - matriz_b
+    matriz_d = matriz_a + matriz_b
+    print("La suma de la matriz a y b es:\n", matriz_d)
 
-print("La resta de la matriz a y b es:\n", matriz_e)
+    matriz_e = matriz_a - matriz_b
 
-print("Al intentar sumar o restar las matrices a y c, de diferente tamaño"
-      " matrices de diferente tamaño se obtiene el "
-      "siguiente error:\n")
-error = matriz_a+matriz_c
+    print("La resta de la matriz a y b es:\n", matriz_e)
+
+    print("Al intentar sumar o restar las matrices a y c, de diferente tamaño"
+          " matrices de diferente tamaño se obtiene el "
+          "siguiente error:\n")
+    error = matriz_a+matriz_c
